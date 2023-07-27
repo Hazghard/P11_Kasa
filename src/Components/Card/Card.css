@@ -1,0 +1,36 @@
+.card {
+    height: 340px;
+    width: 340px;
+
+    position: relative;
+
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+
+}
+
+.card img {
+    height: 340px;
+    width: 340px;
+
+    border-radius: 10px;
+
+    background-size: cover;
+    object-fit: cover;
+}
+
+.card span {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+
+    width: 300px;
+
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    /* 25.668px */
+}

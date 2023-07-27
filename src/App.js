@@ -1,13 +1,15 @@
-import './App.css';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import PublicRouter from '@/Pages/Public/PublicRouter';
 
 
-function App() {
+const App = () => {
+
   return (
     <div className="App">
       <BrowserRouter>
-        <PublicRouter />
+        <Routes>
+          <Route path="/*" element={<PublicRouter />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );

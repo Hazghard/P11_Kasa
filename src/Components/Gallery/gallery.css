@@ -1,0 +1,19 @@
+/* --------------------------------------------------------- */
+/* ------------------------ GALLERY ------------------------ */
+/* --------------------------------------------------------- */
+
+.gallery {
+    height: 100vh;
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 60px;
+    justify-items: center;
+
+    padding: 56px 50px 0px 50px;
+
+    border-radius: 25px;
+    background: #F6F6F6;
+}
