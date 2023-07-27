@@ -1,0 +1,39 @@
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FF6060;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    height: 68px;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 63px 0px 63px 0px;
+}
+
+header img {
+    height: 63px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 57px;
+}
+
+header ul li {
+    color: #FF6060;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+    text-decoration-line: underline;
+}
