@@ -1,0 +1,23 @@
+.HostContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.HostName {
+    color: #FF6060;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+}
+
+
+.HostPic {
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+}

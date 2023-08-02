@@ -1,0 +1,50 @@
+.CarouselBtnContainer {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center
+}
+
+.LeftCarouselContainer {
+    top: 0;
+    left: 0;
+    padding-left: 23.36px;
+}
+
+.RightCarouselContainer {
+    top: 0;
+    right: 0;
+    padding-right: 23.36px;
+
+}
+
+.ArrowBack {}
+
+.ArrowForward {}
+
+.MediaContainer {
+    height: 100%;
+    border-radius: 25px;
+
+}
+
+.AppartmentImg {
+    height: inherit;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    background: lightgray 50% / cover no-repeat;
+}
+
+.CarrouselPositionIndicator {
+    position: absolute;
+    bottom: 24.92px;
+    left: 50%;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 142.6%;
+}

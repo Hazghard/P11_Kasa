@@ -1,0 +1,26 @@
+.RatingUl {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin: 0;
+    padding: 0;
+}
+
+.Star {
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.CheckedStar {
+    color: #FF6060;
+}
+
+.UncheckedStar {
+    color: #E3E3E3;
+}

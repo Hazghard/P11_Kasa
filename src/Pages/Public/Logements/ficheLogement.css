@@ -1,0 +1,21 @@
+.MainLogement {
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+}
+
+.Carousel {
+    height: 415px;
+    position: relative;
+}
+
+.LayoutLogement {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 30px 0 24px 0;
+}
+
+.Dropdown {
+    display: flex;
+    justify-content: space-between;
+    gap: 76px;
+}

@@ -25,6 +25,7 @@
     width: 100%;
     border-radius: 25px;
     background: lightgray 50% / cover no-repeat;
+    object-fit: cover;
 }
 
 

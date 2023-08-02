@@ -34,3 +34,15 @@
     line-height: 142.6%;
     /* 25.668px */
 }
+
+.cardDarken {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+}

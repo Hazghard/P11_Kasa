@@ -8,6 +8,7 @@ const Card = ({ id, cover, title }) => {
     return (
         <article className='card' key={id}>
             <NavLink key={id} to={"/logement/" + id + "/#"}>
+                <div className='cardDarken'></div>
                 <img src={cover} alt={title} id={id} />
                 <span>{title}</span>
             </NavLink>

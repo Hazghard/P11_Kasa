@@ -10,9 +10,7 @@ const Layout = () => {
     return (
         <div className='Layout'>
             <Header />
-            <main>
-                <Outlet />
-            </main>
+            <Outlet />
             <Footer />
         </div>
     );
