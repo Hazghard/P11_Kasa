@@ -5,16 +5,16 @@ import ArrowForward from '@/Assets/images/ArrowForward.svg'
 
 import './carrousel.css'
 
-const Carrousel = (data) => {
-    console.log("data carousel", data);
+const Carrousel = ({ pictures }) => {
+    console.log("data carousel", pictures);
 
     const [CurrentImgId, setCurrentImgId] = useState(0);
-    const [CurrentImg, setCurrentImg] = useState(data.data[CurrentImgId]);
+    const [CurrentImg, setCurrentImg] = useState(pictures[CurrentImgId]);
 
     function BackPic() {
         console.log("CurrentImgId", CurrentImgId);
         if (CurrentImgId === 0) {
-            setCurrentImgId(data.data.length - 1);
+            setCurrentImgId(pictures.length - 1);
         } else {
             setCurrentImgId(CurrentImgId - 1);
         }
@@ -23,7 +23,7 @@ const Carrousel = (data) => {
 
     function ForwardPic() {
         console.log("CurrentImgId", CurrentImgId);
-        if (CurrentImgId === data.data.length - 1) {
+        if (CurrentImgId === pictures.length - 1) {
             setCurrentImgId(0);
         } else {
             setCurrentImgId(CurrentImgId + 1);
@@ -33,8 +33,8 @@ const Carrousel = (data) => {
     useEffect(() => {
         console.log("CurrentImgId useEffect", CurrentImgId);
 
-        setCurrentImg(data.data[CurrentImgId]);
-    }, [CurrentImgId, data.data])
+        setCurrentImg(pictures[CurrentImgId]);
+    }, [CurrentImgId, pictures])
 
 
 
@@ -51,7 +51,7 @@ const Carrousel = (data) => {
             <div className='CarouselBtnContainer RightCarouselContainer' onClick={ForwardPic}>
                 <img src={ArrowForward} className='ArrowForward' alt='NextBtn' />
             </div>
-            <span className='CarrouselPositionIndicator'>{CurrentImgId + 1}/{data.data.length}</span>
+            <span className='CarrouselPositionIndicator'>{CurrentImgId + 1}/{pictures.length}</span>
         </>
     );
 };

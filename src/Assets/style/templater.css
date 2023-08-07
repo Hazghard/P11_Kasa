@@ -13,13 +13,28 @@ code {
 }
 
 .App {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 0;
     max-width: 1440px;
-    width: 1440px;
+    width: 100%;
     height: 100vh;
+    overflow-y: auto;
+    box-sizing: border-box;
 
     padding-left: 100px;
     padding-right: 100px;
+}
+
+/* Cacher la barre de défilement verticale pour éviter le déplacement de l'app vers la gauche quand la barre apparait */
+.App::-webkit-scrollbar {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .App {
+        padding: 20px 0px 0px 0px;
+        max-width: 600px;
+        width: 100vw;
+    }
 }

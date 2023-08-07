@@ -1,13 +1,21 @@
 import listelogements from "@/Assets/Mock/logements.data.json";
 
+const GetAllLogement = () => {
+    return listelogements;
+};
 
-let GetAllLogement = () => {
-    return listelogements
-}
-
-let GetOneLogement = async (id) => {
+const GetOneLogement = async (id) => {
     const Logement = await listelogements.find(logement => logement.id === id);
-    return Logement
-}
+    if (Logement === null || Logement === undefined) {
+        throw new Error('The required data do not exist');
+    } else {
+        return Logement;
+    }
+};
 
-export default { GetAllLogement, GetOneLogement };
+const LogementService = {
+    GetAllLogement,
+    GetOneLogement,
+};
+
+export default LogementService;

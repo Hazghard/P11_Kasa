@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 
 import { Home, FicheLogement, APropos, Error } from '@/Pages/Public/index';
 
@@ -11,7 +11,7 @@ const PublicRouter = () => {
 
             <Route element={<Layout />}>
 
-                <Route index element={<Home />} />
+                <Route index element={<Navigate to="/home" />} />
 
                 <Route path='/home' element={<Home />} />
                 <Route path='/logement/:id' element={<FicheLogement />} />

@@ -23,3 +23,18 @@ footer span {
     font-weight: 500;
     line-height: 142.6%;
 }
+
+@media only screen and (max-width: 600px) {
+    footer {
+        padding: 62px 0px 62px 0px;
+    }
+
+    footer img {
+        width: 122px;
+        filter: brightness(0) invert(1);
+    }
+
+    footer span {
+        font-size: 12px;
+    }
+}

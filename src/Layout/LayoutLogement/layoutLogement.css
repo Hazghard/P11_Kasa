@@ -29,3 +29,25 @@
     margin: 0;
     padding: 0;
 }
+
+@media only screen and (max-width: 600px) {
+    .LogementTitle {
+        font-size: 18px;
+    }
+
+    .LogementLocation {
+        font-size: 14px;
+        padding: 0 0 10px 0;
+    }
+
+    .LogementTagsUl {
+        flex-wrap: wrap;
+    }
+
+    .LogementArticleHostRating {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between
+    }
+}

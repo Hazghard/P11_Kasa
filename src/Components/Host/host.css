@@ -15,9 +15,30 @@
     line-height: 142.6%;
 }
 
+.HostName ul {
+    padding: 0;
+    margin: 0;
+}
+
+
 
 .HostPic {
     height: 64px;
     width: 64px;
     border-radius: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .HostContainer {
+        gap: 10.5px;
+    }
+
+    .HostName {
+        font-size: 12px;
+    }
+
+    .HostPic {
+        height: 32px;
+        width: 32px;
+    }
 }

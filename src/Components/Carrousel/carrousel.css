@@ -15,12 +15,7 @@
     top: 0;
     right: 0;
     padding-right: 23.36px;
-
 }
-
-.ArrowBack {}
-
-.ArrowForward {}
 
 .MediaContainer {
     height: 100%;
@@ -47,4 +42,33 @@
     font-style: normal;
     font-weight: 500;
     line-height: 142.6%;
+}
+
+@media only screen and (max-width: 600px) {
+    .CarouselBtnContainer img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .LeftCarouselContainer {
+        padding-left: 0px;
+    }
+
+    .RightCarouselContainer {
+        padding-right: 0px;
+    }
+
+    .MediaContainer {
+        border-radius: 10px;
+    }
+
+    .AppartmentImg {
+
+        border-radius: 10px;
+    }
+
+    .CarrouselPositionIndicator {
+        display: none;
+    }
+
 }

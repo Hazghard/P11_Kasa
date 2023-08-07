@@ -24,3 +24,11 @@
 .UncheckedStar {
     color: #E3E3E3;
 }
+
+@media only screen and (max-width: 600px) {
+    .Star {
+        width: 22px;
+        height: 22px;
+        font-size: 14px;
+    }
+}

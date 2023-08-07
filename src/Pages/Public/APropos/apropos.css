@@ -1,0 +1,19 @@
+.AproposMain {
+    padding: 44px 0px 46px 0px;
+}
+
+.DropdownsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+@media only screen and (max-width: 600px) {
+    .AproposMain {
+        padding: 17px 20px 20px 19px;
+    }
+
+    .AproposMain .banner {
+        height: 223px;
+    }
+}

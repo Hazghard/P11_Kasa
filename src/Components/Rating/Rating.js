@@ -3,23 +3,22 @@ import { BsStarFill } from "react-icons/bs";
 
 import './rating.css'
 
-const Rating = (starNumber) => {
-    console.log("starNumber", starNumber)
-    let generatedStars = [];
-
-    for (let i = 0; i < starNumber.data; i++) {
-        generatedStars.push(<li key={i + "yesStar"} className='Star CheckedStar'><BsStarFill /></li>)
-    }
-
-    for (let i = 0; i < 5 - starNumber.data; i++) {
-        generatedStars.push(<li key={i + "noStar"} className='Star UncheckedStar'><BsStarFill /></li>)
-    }
+const Rating = ({ starNumber }) => {
+    console.log("starNumber", starNumber);
 
     return (
         <ul className='RatingUl'>
-            {generatedStars}
+            {
+                [...Array(5)].map((value, index) => {
+                    if (index + 1 < starNumber) {
+                        return (<li key={index + "yesStar"} className='Star CheckedStar'><BsStarFill /></li>)
+                    } else {
+                        return (<li key={index + "noStar"} className='Star UncheckedStar'><BsStarFill /></li>)
+                    }
+                })
+            }
         </ul>
-    );
+    )
 };
 
 export default Rating;
