@@ -1,10 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-
-import '@/Assets/style/normalizer.css';
-import '@/Assets/style/templater.css';
-
 import App from './App';
+
+import '@/Assets/style/templater.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,3 +10,4 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
